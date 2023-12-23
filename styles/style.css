@@ -288,11 +288,6 @@
 }
 
 .footer__menu-list {
-  align-content: center;
-  list-style: none;
-}
-
-.footer__menu-list {
   display: flex;
   flex-direction: column;
   align-items: center;
