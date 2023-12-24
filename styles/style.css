@@ -37,15 +37,15 @@
   font-size: 18px;
 }
 
-.adress {
+.address {
   display: flex;
   font-size: 18px;
+  font-style: normal;
   line-height: 1.35;
 }
 
 .header__address {
   margin-left: 155px;
-  list-style: none;
 }
 
 .cover {
@@ -60,14 +60,15 @@
 }
 
 .overlay {
-  position: relative;
-  z-index: 0;
+  position: absolute;
   width: 100%;
   height: 100%;
   background-color: rgb(0, 0, 0, 0.6);
 }
 
 .cover__title {
+  position: relative;
+  z-index: 1;
   color: #fff;
   font-weight: 700;
   font-size: 100px;
@@ -80,19 +81,15 @@
   letter-spacing: 60px;
 }
 
-.letter-spacing-extended_57 {
-  letter-spacing: 57px;
-}
-
 .no-letter-spacing {
   letter-spacing: 0px;
 }
 
 .aligned-text {
- display: block;
- padding-top: 160px;
- padding-right: 46px;
- padding-left: 47px;
+  display: block;
+  padding-top: 160px;
+  padding-right: 46px;
+  padding-left: 47px;
 }
 
 .aligned-text_center {
@@ -107,6 +104,8 @@
 }
 
 .cover__description {
+  position: relative;
+  z-index: 1;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -123,10 +122,6 @@
   text-align: center;
   text-transform: uppercase;
   word-spacing: 17px;
-}
-
-.word-spacing-extended {
-  padding-left: 5px;
 }
 
 .bet-button {
@@ -147,7 +142,6 @@
   display: flex;
   flex-direction: column;
   width: 1034px;
-  min-height: 682px;
   margin-top: 177px;
   margin-right: 33px;
   margin-left: 33px;
@@ -188,28 +182,27 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 554px;
+  min-height: 554px;
   background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card_type {
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
 }
 
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
-  background-position: -342px;
-  background-size: cover;
 }
 
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
-  background-position: center;
-  background-size: cover;
 }
 
 .card__title {
@@ -223,7 +216,7 @@
 }
 
 .card__text {
-  margin: 0 35px 46px 39px;
+  margin: 0 35px 43px 39px;
   color: #FFF;
   font-size: 20px;
   text-decoration: none;
@@ -245,7 +238,7 @@
   width: 237px;
   height: 237px;
   margin-right: 45px;
-  margin-left: 71px;
+  margin-left: 70px;
   border-radius: 50%;
   padding: 62px 45px;
   background-color: black;
